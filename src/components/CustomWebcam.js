@@ -47,7 +47,7 @@ const CustomWebcam = () => {
           </button>
         </div>
         <div className="custom-button">
-          <a href={imgSrc} download="webcam-photo.jpg">
+          <a href={imgSrc} alt="capture" download="webcam-photo.jpg">
             <button>
               SAVE
               <div className="line"></div>

@@ -124,7 +124,7 @@ body {
     /* right: 50%; */
     /* transform: translateX(50%); */
     transform: none;
-    height: 450px;
+    height: 500px;
     width: 100vw;
     z-index: 1;
   }
@@ -143,7 +143,7 @@ body {
   .webcam-view,
   .webcamImg {
     top: calc(100vh - 50%);
-    top: 130%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;

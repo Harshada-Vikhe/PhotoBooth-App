@@ -21,7 +21,7 @@ const CustomWebcam = () => {
 
   return (
     <div className="container">
-      <img src={imgSrc} className="webcamImg" />
+      <img src={imgSrc} alt="img" className="webcamImg" />
       <Webcam
         ref={webcamRef}
         className="webcam-view"
@@ -47,7 +47,7 @@ const CustomWebcam = () => {
           </button>
         </div>
         <div className="custom-button">
-          <a href={imgSrc} alt="capture" download="webcam-photo.jpg">
+          <a href={imgSrc}  download="webcam-photo.jpg">
             <button>
               SAVE
               <div className="line"></div>

@@ -125,8 +125,13 @@ body {
     /* right: 50%; */
     /* transform: translateX(50%); */
     transform: none;
+<<<<<<< HEAD
     height: 450px;
     width: 80vw;
+=======
+    height: 500px;
+    width: 100vw;
+>>>>>>> 0e4b04d3f322c3f9078b06fdbeca48237d88ef3b
     z-index: 1;
   }
 

@@ -120,7 +120,8 @@ body {
     /* height: 300px;
         width: 200px; */
     top: 15%;
-    left: 10vw;
+    
+    padding: auto;
 
     /* right: 50%; */
     /* transform: translateX(50%); */

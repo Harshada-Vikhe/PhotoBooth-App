@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.bgImg {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  object-fit: fill;
+  background-position: center;
+}
+
+.rightImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 30vw;
+}
+
+.frameImg {
+  position: absolute;
+  top: 60%;
+  left: 48%;
+
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 80%;
+  box-shadow: 0 4px 8px rgba(225, 133, 133, 0.8);
+  z-index: 10;
+}
+.webcam-view {
+  z-index: 2;
+}
+.webcamImg {
+  z-index: 3;
+}
+
+.webcam-view,
+.webcamImg {
+  position: absolute;
+
+  top: 54%;
+  left: 48%;
+
+  transform: translate(-50%, -50%);
+  height: 360px;
+  width: 300px;
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: cover;
+}
+.home {
+  position: absolute;
+  top: 18%;
+  left: 55%;
+
+  transform: translate(-50%, -50%);
+  color: white;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+
+  top: 50%;
+  left: 20%;
+
+  transform: translate(-50%, -50%);
+}
+
+.custom-button button {
+  width: 170px;
+  height: 50px;
+  color: rgb(230, 23, 102);
+  cursor: pointer;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 20px 0 20px 0;
+  border: white;
+  background: linear-gradient(45deg, #e2dfde, #f9b09c);
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(45deg, #e2dfde, #f9b09c);
+  width: 390%;
+  bottom: 0;
+  left: 240%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px) {
+  .bgImg {
+    width: 100vw;
+    position: relative;
+    height: auto;
+    min-height: 200vh;
+
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    object-fit: cover;
+  }
+
+  .rightImg {
+    position: absolute;
+    /* height: 300px;
+        width: 200px; */
+    top: 15%;
+    left: 0;
+    /* right: 50%; */
+    /* transform: translateX(50%); */
+    transform: none;
+    height: 400px;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .frameImg {
+    position: absolute;
+    top: calc(100vh - 50%);
+    top: 15%;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    max-height: 70vh;
+  }
+  .webcam-view,
+  .webcamImg {
+    top: calc(100vh - 50%);
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    object-fit: cover;
+    max-height: 45vh;
+    /* max-height: 275px; */
+    max-width: 400px;
+  }
+  .home {
+    top: 7%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+  .buttons {
+    display: block;
+    top: 165%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .custom-button button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .bgImg {
+    width: 100vw;
+    position: relative;
+    height: auto;
+    min-height: 300vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    object-fit: cover;
+  }
+  .rightImg {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    transform: none;
+    height: 450px;
+    width: 80vw;
+    z-index: 1;
+    object-fit: fill;
+  }
+
+  .frameImg {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    max-height: 80vh;
+  }
+
+  .webcam-view,
+  .webcamImg {
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 70%;
+    object-fit: cover;
+    max-height: 80vh;
+    max-width: 400px;
+  }
+
+  .home {
+    top: 7%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+  .buttons {
+    display: block;
+    top: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .custom-button button {
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+
+  .line {
+    display: none;
+  }
+}

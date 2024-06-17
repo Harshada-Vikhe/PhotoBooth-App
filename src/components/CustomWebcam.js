@@ -31,7 +31,7 @@ const CustomWebcam = () => {
       ctx.drawImage(photo, 0, 0, canvasSize.width, canvasSize.height);
 
       frame.onload = () => {
-        ctx.drawImage(frame, -6, 0, 510, 540);
+        ctx.drawImage(frame, 0, 0, canvasSize.width, canvasSize.height);
         const framedImageSrc = canvas.toDataURL("image/jpeg");
         setFramedImage(framedImageSrc);
       };

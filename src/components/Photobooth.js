@@ -13,7 +13,7 @@ const Photobooth = () => {
       <Home />
       
       <img className="frameImg" src={frameImg} alt="Frame" />
-      <CustomWebcam frameSrc={frameImg} />
+      {/* <CustomWebcam frameSrc={frameImg} /> */}
     </div>
   );
 };

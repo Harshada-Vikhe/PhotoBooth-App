@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   width: 100vw;
+ 
 }
 
 .bgImg {
@@ -23,16 +24,16 @@ body {
   right: 0;
   height: 100vh;
   width: 30vw;
+  object-fit: cover;
 }
 
 .frameImg {
   position: absolute;
-  top: 60%;
-  left: 48%;
-
+  top: 55%;
+  left: 45%;
   transform: translate(-50%, -50%);
-  max-width: 90%;
-  max-height: 80%;
+  width: 30%;
+  height: 65%;
   box-shadow: 0 4px 8px rgba(225, 133, 133, 0.8);
   z-index: 10;
 }
@@ -46,22 +47,18 @@ body {
 .webcam-view,
 .webcamImg {
   position: absolute;
-
   top: 54%;
-  left: 48%;
-
+  left: 45%;
   transform: translate(-50%, -50%);
-  height: 360px;
-  width: 300px;
-  max-width: 90%;
-  max-height: 80%;
+  width: 26%;
+  height: 58%;
   object-fit: cover;
 }
 .home {
   position: absolute;
-  top: 18%;
-  left: 55%;
-
+  top: 19%;
+  left: 57%;
+  font-size: 28px;
   transform: translate(-50%, -50%);
   color: white;
   cursor: pointer;
@@ -69,7 +66,7 @@ body {
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 23px;
   position: absolute;
 
   top: 50%;
@@ -77,32 +74,282 @@ body {
 
   transform: translate(-50%, -50%);
 }
-
-.custom-button button {
-  width: 170px;
-  height: 50px;
+ img{
+ }
+.custom-button button{
+  width: 220px;
+  height: 65px;
   color: rgb(230, 23, 102);
   cursor: pointer;
   padding: 15px 25px;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
-  border-radius: 20px 0 20px 0;
+  border-radius: 25px 0 25px 0;
   border: white;
-  background: linear-gradient(45deg, #e2dfde, #f9b09c);
+  /* background: linear-gradient(45deg, #e2dfde, #f9b09c); */
   position: relative;
 }
+.btn1{
+  background-color: rgb(236, 227, 225);
+}
+.btn2,
+.btn3,
+.btn4{
+   background: linear-gradient(45deg, #f6cec2f8, #f0d7d0);
+ }
 
 .line {
   position: absolute;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(45deg, #e2dfde, #f9b09c);
-  width: 390%;
+  width: 430%;
   bottom: 0;
-  left: 240%;
+  left: 300%;
   transform: translateX(-50%);
+}
+  
+
+
+@media screen and (min-width:768px) and (max-width:1366px){
+
+   body{
+    overflow: hidden;
+   }
+
+  .frameImg {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 65%;
+    box-shadow: 0 4px 8px rgba(225, 133, 133, 0.8);
+    z-index: 10;
+  }
+  .webcam-view,
+  .webcamImg {
+    position: absolute;
+    top: 54%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+    height: 60%;
+    object-fit: cover;
+  }
+  .home {
+    position: absolute;
+    top: 19%;
+    left: 59%;
+    font-size: 25px;
+  }
+   
+  .custom-button button{
+    width: 200px;
+    height: 55px;
+    color: rgb(230, 23, 102);
+    cursor: pointer;
+    padding: 15px 25px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 25px 0 25px 0;
+    border: white;
+    /* background: linear-gradient(45deg, #e2dfde, #f9b09c); */
+    position: relative;
+  }
+  .line {
+    width: 390%;
+    bottom: 0;
+    left: 220%;
+  }
+}
+@media screen and (max-height:1024px) {
+   
+  .rightImg{
+    object-fit: contain;
+  }
+
+  .frameImg {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 65%;
+    box-shadow: 0 4px 8px rgba(225, 133, 133, 0.8);
+    z-index: 10;
+  }
+  .webcam-view,
+  .webcamImg {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 28%;
+    height: 62%;
+    object-fit: cover;
+  }
+  
+  .home {
+    font-size: 20px;
+    top: 19%;
+    left: 59%;
+  }
+   
+  .custom-button button{
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    /* background: linear-gradient(45deg, #e2dfde, #f9b09c); */
+    position: relative;
+  }
+  .line {
+    width: 400%;
+    bottom: 0;
+    left: 230%;
+  }
+}
+
+@media screen and (min-height:481px) and (max-width:768px) {
+  .rightImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 30vw;
+    object-fit: cover;
+  }
+  
+  
+  .frameImg {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 65%;
+    box-shadow: 0 4px 8px rgba(225, 133, 133, 0.8);
+    z-index: 10;
+  }
+  .webcam-view,
+  .webcamImg {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 28%;
+    height: 62%;
+    object-fit: cover;
+  }
+  
+  .home {
+    font-size: 20px;
+    top: 19%;
+    left: 59%;
+  }
+   
+  .custom-button button{
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    /* background: linear-gradient(45deg, #e2dfde, #f9b09c); */
+    position: relative;
+  }
+  .line {
+    width: 260%;
+    bottom: 0;
+    left: 210%;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .container{
+    overflow-x: hidden;
+  }
+  .bgImg {
+    width: 100vw;
+    position: relative;
+    height: auto;
+    min-height: 235vh;
+
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    object-fit: cover;
+  }
+
+  .rightImg {
+    position: absolute;
+    /* height: 300px;
+        width: 200px; */
+    top: 150%;
+    padding: 0 25px;
+
+    /* right: 50%; */
+    /* transform: translateX(50%); */
+    transform: none;
+    width: 70vw;
+    height: 400px;
+    width: 100vw;
+    z-index: 1;
+    object-fit: contain;
+  }
+
+  .frameImg {
+    position: absolute;
+    top: calc(100vh - 50%);
+    /* top: 15%; */
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    max-height: 70vh;
+  }
+  .webcam-view,
+  .webcamImg {
+    top: calc(100vh - 50%);
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    object-fit: cover;
+    max-height: 60vh;
+    /* max-height: 275px; */
+    max-width: 400px;
+  }
+  .home {
+    top: 7%;
+    left: 82%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+  }
+
+  .buttons {
+    display: block;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .custom-button button {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .container{
+    overflow-x: hidden;
+  }
   .bgImg {
     width: 100vw;
     position: relative;
@@ -119,129 +366,62 @@ body {
     position: absolute;
     /* height: 300px;
         width: 200px; */
-    top: 15%;
-    
-    padding: auto;
+    top: 130%;
+    padding: 0 25px;
 
     /* right: 50%; */
     /* transform: translateX(50%); */
     transform: none;
-    height: 450px;
-    width: 80vw;
-    height: 500px;
     width: 100vw;
+    height: 600px;
+    
     z-index: 1;
+    object-fit: contain;
   }
 
   .frameImg {
     position: absolute;
     top: calc(100vh - 50%);
     /* top: 15%; */
-    top: 120%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 400px;
+    height: 90%;
+    max-width: 500px;
     max-height: 70vh;
   }
   .webcam-view,
   .webcamImg {
     top: calc(100vh - 50%);
-    top: 118%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 70%;
     object-fit: cover;
     max-height: 60vh;
     /* max-height: 275px; */
-    max-width: 400px;
+    max-width: 450px;
   }
   .home {
-    top: 7%;
-    left: 10%;
+    top: 6%;
+    left: 72%;
+    font-size: 15px;
     transform: translate(-50%, -50%);
   }
 
   .buttons {
     display: block;
-    top: 165%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .custom-button button {
-    width: 120px;
-    height: 40px;
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-
-  .line {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .bgImg {
-    width: 100vw;
-    position: relative;
-    height: auto;
-    min-height: 300vh;
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
-    object-fit: cover;
-  }
-  .rightImg {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    transform: none;
-    height: 600px;
-    width: 80vw;
-    z-index: 1;
-    object-fit: fill;
-  }
-
-  .frameImg {
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 400px;
-    max-height: 80vh;
-  }
-
-  .webcam-view,
-  .webcamImg {
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    width: 70%;
-    object-fit: cover;
-    max-height: 80vh;
-    max-width: 400px;
-  }
-
-  .home {
-    top: 7%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-  }
-
-  .buttons {
-    display: block;
-    top: 200%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .custom-button button {
-    width: 170px;
+    width: 240px;
     height: 50px;
-    font-size: 17px;
-    margin-bottom: 18px;
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .line {

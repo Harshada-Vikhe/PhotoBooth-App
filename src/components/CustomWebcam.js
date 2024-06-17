@@ -66,6 +66,8 @@ const CustomWebcam = () => {
     const handleResize = () => {
       const frame = new Image();
       frame.onload = () => {
+        const width = frame.width > window.innerWidth ? window.innerWidth : frame.width;
+        const height = frame.height > window.innerHeight ? window.innerHeight : frame.height;
         setCanvasSize({ width: frame.width, height: frame.height });
       };
       frame.src = frameSrc;
